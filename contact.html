@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <a href="index.html" id="topOfPage"><img src="pics/aurora_icon2.png" alt="aurora icon" id="icon"></a>
+        <a href="index.html"><h1>Aurora hunting</h1></a>
+    </header>
+    <nav>
+        <ul id="globalnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="science.html">Sience</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html" id="thisPage">Contact</a></li>
+        </ul> 
+    </nav>
+    <div id="contact">
+        <h2>Fill out the form below and we will contact you as quickly as possible.</h2>
+		<form id="booking" method="post">
+			<fieldset id="tour">
+				<legend>Select tour</legend>
+				<label><input type="radio" name="tourType" checked> Questions</label><br>
+				<label><input type="radio" name="tourType"> Single Night</label><br>
+				<label><input type="radio" name="tourType"> Adventure Tour</label><br>
+                <label><input type="radio" name="tourType"> Luxury Tour</label><br>
+			</fieldset>
+			<fieldset id="date">
+				<legend>Date</legend>
+				<label>Date of arrival <input type="date" name="arrivaldate" required></label>
+			</fieldset>
+			<fieldset id="customer">
+				<legend>Contact information</legend>
+				<p><label><span>Name*</span><input type="text" name="name" id="name" size="40" required></label></p>
+				<p><label><span>Phone*</span><input type="text" name="telephone" id="telephone" size="15"></label> <span></span></p>
+				<p><label><span>E-mail*</span><input type="email" name="email" id="email" size="40" required></label></p>
+			</fieldset>
+            <fieldset>
+                <legend>Additional information</legend>
+                <textarea rows="12"></textarea>
+                
+            </fieldset>
+			<p id="submitbtn"><input type="submit" id="send" value="Submit"></p>
+		</form>
+    </div>
+    <footer>
+        <p>&copy;  Aurora hunter -- 2018</p>   <div id="topBtn"><a href="#topOfPage">Top</a></div>
+    </footer>
+    </div>
+</body>
+</html>

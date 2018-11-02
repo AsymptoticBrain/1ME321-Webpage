@@ -1,0 +1,91 @@
+/* ----- Default styles ----- */
+
+html, body, div, header, nav, main, article, section, aside, footer {margin:0; padding:0;}
+header, nav, main, article, section, aside, footer {display:block;} /* Browsers lacking HTML5 */
+
+/* ----- Layout ----- */
+
+/*settings for the whole page */
+
+body {background-color:#000000; color:#415466; font-family:Garamond,serif; font-size:14px;padding:0px;} 
+
+/*Settings for where the content is*/
+
+#wrapper {max-width: 1100px; margin: auto; background-color: #f0f8ff;} 
+
+/*Header and Footer*/
+
+header {background-image: url(pics/bg.jpg); background-position:center; height:250px;}
+header h1 {color:#f0f8ff; font-family: "Stempel Garamond", serif; font-size: 50px; text-shadow: 6px 6px 8px #415466;
+                        margin:0px; padding-top: 0.7em;}
+header a {text-decoration:none}
+header #icon {margin: 2em 1.2em 2em 2em; float: left;}
+
+footer {background-color:#415466; color:#7eaba4; text-align: center; padding:15px; clear:both; position: relative;}
+footer #topBtn {float: right; background-color: #7eaba4; color: #415466;width: 4em; border-radius:5px; padding: 0.5em;}
+footer #topBtn {position: absolute; top: 20px; right:25px;}
+footer #topBtn a {text-decoration:none; font-size:1.2em; text-transform: uppercase;}
+
+/*Settings for navigation */
+
+#globalnav {background-color:#415466; text-align: center; list-style:none; margin:0em; padding:0.8em; padding-left:2em;}
+#globalnav li {display:inline;}
+#globalnav a {text-decoration:none; color:#7eaba4; margin-right:0.5em; padding:0.8em;}
+#globalnav a:hover, #globalnav a:active {background-color:#7eaba4; color:#670101;}
+#globalnav #thisPage {background-color:#f0f8ff; border-top: 2px solid #cc0000;}
+
+#localnav {float:left; list-style:none; width:120px; margin:0; padding-left:10px; margin-top:2em;}
+#localnav li {display:block; margin-bottom:1em; padding: 5px; width: auto;}
+#localnav a {text-decoration:none; font-size:1.2em;}
+#localnav a:hover {color: #670101; font-weight:bold;}
+#localnav #thisPageLocal {background-color: #7eaba4; color:#670101; border-radius: 10px; text-align: center; box-shadow:5px 5px 3px #415466;}    
+
+/*Settings for the main area */
+
+main { padding:10px; margin-left:150px;}
+
+#content {float:left; width:650px;}
+#content {margin-bottom:10px; margin-right:10px; padding:8px;}
+
+#science {float:left; width:800px;margin-bottom: 20px;}
+
+#tours {float:left; width:800px;}
+#tours section {margin-bottom:20px; margin-right:10px; padding:8px; border:1px solid #7eaba4;
+                        border-radius:10px; box-shadow:7px 7px 5px #7eaba4;}
+                        
+#notes {float:right; width:250px;}
+#notes section {background-color:#7eaba4; color:#FFF; margin:16px; padding:10px; border-radius:10px; box-shadow:7px 7px 5px #415466;}
+#notes section h5 {text-align: right; font-style: italic;}
+
+#contact {margin-left: 100px; margin-right: 100px; padding: 30px;}
+#contact h2 {text-align: center; color: #415466; padding-bottom:15px;}
+
+#booking {background-color: #7eaba4; margin-left: auto; margin-right: auto; width: 60%; padding: 10px;border-radius:10px;}
+#booking fieldset {margin-bottom: 20px;}
+#booking legend {font-size: 17px;}
+#booking textarea {width: 100%; box-sizing: border-box;}
+#booking #submitbtn {text-align: center;}
+#booking #submitbtn #send {width: 120px;}
+
+#pictureGallery {margin-bottom: 20px; margin-top:20px;}
+.sciencePics {float: left; width: 30%; margin:1%; transition-duration: 0.5s;}
+.sciencePics:hover {transform: scale(2.0); border-radius: 10px; box-shadow:7px 7px 5px #415466;}
+
+.teamPics {float: left; width: 30%; margin:1%; transition-duration: 0.5s;}
+
+figure {display: block; margin:0.5em; padding: 0.5em; text-align: center; font-style: italic;}
+figure img {text-align: center; width: 75%; margin-top: 2em;}
+#content figure img {border-radius:10px; box-shadow:7px 7px 5px #415466; margin-bottom: 1em;}
+
+.rightPic {margin:16px; float:right; border-radius:10px; box-shadow:7px 7px 5px #415466;}
+.leftPic {margin:16px; float:left; border-radius:10px; box-shadow:-7px 7px 5px #415466;}
+
+/* Meet the Team CSS */
+
+.teamBox { float: left; position: relative; width: 30%; margin: 1%}
+.teamPics {display: block; width: 100%; height: auto;}
+
+.overlay {position: absolute; bottom: 0; background: rgba(0, 0, 0, 0.5); color: #f1f1f1; width: 85%; height: 87%;
+                        transition: .5s ease; opacity:0; font-size: 20px; padding: 20px;text-align: center;}
+
+.teamBox:hover .overlay {opacity: 1;}
